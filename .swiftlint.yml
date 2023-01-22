@@ -1,0 +1,91 @@
+# swiftlint规范检查配置
+# 配置参考文档:
+# https://realm.github.io/SwiftLint/rule-directory.html
+# https://github.com/realm/SwiftLint/blob/main/README_CN.md
+# @author: entfrm开发团队-王翔
+# @create: 2022/12/3
+
+# 执行时排除掉的规则
+disabled_rules:
+  - missing_docs
+  - unused_closure_parameter
+  - cyclomatic_complexity
+  - inclusive_language
+  - trailing_whitespace
+  - comment_spacing
+  - unused_capture_list
+  - identifier_name
+  - force_cast
+
+# 一些规则仅仅是可选的
+opt_in_rules:
+  # 可以通过执行如下指令来查找所有可用的规则:
+  # swiftlint rules
+
+# 执行 linting 时包含的路径。如果出现这个 `--path` 会被忽略
+included:
+  - Dolphin
+  - DolphinTests
+  - DolphinUITests
+
+# 执行 linting 时忽略的路径。优先级比 `included` 更高
+excluded:
+  - Pods
+  - Dolphin/Resources/R.generated.swift
+  - Dolphin/Networking/GraphQL/API.swift
+
+# 可配置的规则可以通过这个配置文件来自定义
+# 二进制规则可以设置他们的严格程度
+force_cast: warning # 隐式
+force_try:
+  severity: warning # 显式
+
+# 同时有警告和错误等级的规则，可以只设置它的警告等级
+# 隐式
+line_length: 300
+
+function_body_length:
+  - 300 # warning
+  - 400 # error
+
+function_parameter_count:
+  - 10 # warning
+  - 15 # error
+
+large_tuple:
+  - 6 # warning
+  - 12 # error
+  
+# 可以通过一个数组同时进行隐式设置
+type_body_length:
+  - 300 # warning
+  - 400 # error
+
+# 或者也可以同时进行显式设置
+file_length:
+  warning: 1000
+  error: 2000
+
+# 命名规则可以设置最小长度和最大程度的警告/错误
+# 此外它们也可以设置排除在外的名字
+type_name:
+  min_length: 4 # 只是警告
+  max_length: # 警告和错误
+    warning: 40
+    error: 50
+  excluded: # 排除某个名字
+    - T
+    - E
+
+# 命名规则可以设置最小长度和最大程度的警告/错误
+# 此外它们也可以设置排除在外的名字
+identifier_name:
+  min_length: # 只是警告
+    error: 3 # 警告和错误
+  excluded: # 排除某个名字
+    - vc
+    - id
+    - in
+    - kf
+    - x
+    - y

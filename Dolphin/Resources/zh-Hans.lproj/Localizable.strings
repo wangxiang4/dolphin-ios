@@ -1,0 +1,63 @@
+//
+//  中文国际化配置
+//  https://developer.apple.com/documentation/foundation/nsbundle/1417526-developmentlocalization
+//  Created by 福尔摩翔 on 2022/12/5.
+//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//
+
+/* 通用 */
+"Common.Yes" = "是";
+"Common.No" = "否";
+"Common.OK" = "好的";
+"Common.Cancel" = "取消";
+"Common.Done" = "完成";
+"Common.Back" = "返回";
+"Common.Close" = "关闭";
+"Common.Edit" = "编辑";
+"Common.Next" = "下一步";
+"Common.Skip" = "跳过";
+"Common.Reset" = "重置";
+"Common.Save" = "保存";
+"Common.Delete" = "删除";
+"Common.Search" = "搜索";
+"Common.Success" = "成功";
+"Common.Error" = "错误";
+"Common.NoResults" = "暂无数据";
+
+/* 网络连接 */
+"Toast.ConnectionBack.Message" = "连接已恢复";
+"Toast.ConnectionLost.Message" = "网络已断开";
+
+/* 主页TabBar */
+"Home.TabBar.home.Title" = "首页";
+"Home.TabBar.workbench.Title" = "工作台";
+"Home.TabBar.Notifications.Title" = "通知";
+"Home.TabBar.Settings.Title" = "设置";
+
+/* 设置 */
+"Settings.NightMode.Title" = "夜间模式";
+"Settings.Theme.Title" = "颜色主题";
+"Settings.Language.Title" = "语言";
+"Settings.RemoveCache.Title" = "删除缓存";
+"Settings.RemoveCache.Alert.SuccessMessage" = "成功清除缓存";
+"Settings.WhatsNew.Title" = "什么是新的";
+"Settings.LogOut.Title" = "退出";
+"Settings.Logout.Alert.Message" = "您确定要退出登录吗？";
+"Settings.Logout.Alert.ConfirmButton.Title" = "退出";
+
+/* 语言 */
+"Language.Navigation.Title" = "语言";
+/* 主题 */
+"Theme.Navigation.Title" = "颜色主题";
+
+/* 什么是新的 */
+"WhatsNew.Title" = "最近更新";
+"WhatsNew.Item1.Title" = "MVVM架构";
+"WhatsNew.Item1.Subtitle" = "内部大量使用了RXSwift与Rx扩展来构建功能,让代码维护变得更简单";
+"WhatsNew.Item2.Title" = "主题";
+"WhatsNew.Item2.Subtitle" = "你可以用Light和Dark两种不同的主题";
+"WhatsNew.Item3.Title" = "采用SwiftUi编写界面";
+"WhatsNew.Item3.Subtitle" = "SwiftUi编写界面让代码版本控制更好管理,也可以使用XID,故事版追求速度可以使用";
+"WhatsNew.Item4.Title" = "集成SWInject";
+"WhatsNew.Item4.Subtitle" = "Swinject 帮助您的应用程序拆分为松散耦合的组件,可以更轻松地开发、测试和维护这些组件";
+"WhatsNew.CompletionButton.Title" = "继续";

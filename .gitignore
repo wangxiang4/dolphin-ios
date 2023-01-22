@@ -1,0 +1,83 @@
+# 排除构建生成目录
+build/
+DerivedData/
+
+# 排除生成的构建文件
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+# 排除其他
+*.moved-aside
+*.xcuserstate
+
+# 排除Obj-C/Swift文件
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# 排除游乐场文件
+timeline.xctimeline
+playground.xcworkspace
+
+# 排除SwiftPackageManager工具生成目录
+Packages/
+.build/
+
+# 排除CocoaPods工具生成目录
+Pods/
+*.xcworkspace
+
+# 排除Carthage工具生成目录
+Carthage/Checkouts
+Carthage/Build
+Cartfile.resolved
+
+# 排除fastlane自动构建工具生成目录
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/screenshots/screenshots.html
+fastlane/test_output
+
+# AppCode
+.idea/
+
+# R.swift
+*.generated.swift
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# 缩略图
+Icon
+
+# Thumbnails
+._*
+
+# 可能出现在卷根目录中的文件
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# 可能在远程AFP共享上创建的目录
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+

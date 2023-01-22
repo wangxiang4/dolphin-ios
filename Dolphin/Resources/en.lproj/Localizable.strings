@@ -1,0 +1,63 @@
+//
+//  英文国际化配置
+//  https://developer.apple.com/documentation/foundation/nsbundle/1417526-developmentlocalization
+//  Created by 福尔摩翔 on 2022/12/5.
+//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//
+
+/* 通用 */
+"Common.Yes" = "Yes";
+"Common.No" = "No";
+"Common.OK" = "OK";
+"Common.Cancel" = "Cancel";
+"Common.Done" = "Done";
+"Common.Back" = "Back";
+"Common.Close" = "Close";
+"Common.Edit" = "Edit";
+"Common.Next" = "Next";
+"Common.Skip" = "Skip";
+"Common.Reset" = "Reset";
+"Common.Save" = "Save";
+"Common.Delete" = "Delete";
+"Common.Search" = "Search";
+"Common.Success" = "Success";
+"Common.Error" = "Error";
+"Common.NoResults" = "No Data";
+
+/* 网络连接 */
+"Toast.ConnectionBack.Message" = "Back online";
+"Toast.ConnectionLost.Message" = "No connection";
+
+/* 主页TabBar */
+"Home.TabBar.home.Title" = "Home";
+"Home.TabBar.workbench.Title" = "Workbench";
+"Home.TabBar.Notifications.Title" = "Notification";
+"Home.TabBar.Settings.Title" = "Settings";
+
+/* 设置 */
+"Settings.NightMode.Title" = "Night mode";
+"Settings.Theme.Title" = "Color theme";
+"Settings.Language.Title" = "Language";
+"Settings.RemoveCache.Title" = "Remove cache";
+"Settings.RemoveCache.Alert.SuccessMessage" = "Cache Successfully Cleared";
+"Settings.WhatsNew.Title" = "Whats New";
+"Settings.LogOut.Title" = "Log Out";
+"Settings.Logout.Alert.Message" = "Are you sure want to log out from login？";
+"Settings.Logout.Alert.ConfirmButton.Title" = "Logout";
+
+/* 语言 */
+"Language.Navigation.Title" = "Language";
+/* 主题 */
+"Theme.Navigation.Title" = "Color theme";
+
+/* 什么是新的 */
+"WhatsNew.Title" = "Whats New";
+"WhatsNew.Item1.Title" = "MVVM Architecture";
+"WhatsNew.Item1.Subtitle" = "RXSwift and Rx extensions are widely used internally to build functions, making code maintenance easier";
+"WhatsNew.Item2.Title" = "Theme";
+"WhatsNew.Item2.Subtitle" = "You can use two different themes, Light and Dark";
+"WhatsNew.Item3.Title" = "Use SwiftUi to write the interface";
+"WhatsNew.Item3.Subtitle" = "SwiftUi writing interface allows code version control to be better managed, XID can also be used, and story version can be used to pursue speed";
+"WhatsNew.Item4.Title" = "Integration SWInject";
+"WhatsNew.Item4.Subtitle" = "Swinject Help your application split into loosely coupled components that make it easier to develop, test, and maintain";
+"WhatsNew.CompletionButton.Title" = "Continue";

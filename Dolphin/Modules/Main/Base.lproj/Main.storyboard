@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="48q-o1-bAf">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="X2f-6Q-meQ">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="48q-o1-bAf" userLabel="Main View Controller" customClass="MainViewController" customModule="康来呼叫器" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2gm-ot-tve">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pJC-el-NUX">
+                                <rect key="frame" x="35.666666666666657" y="329.66666666666669" width="322" height="193.00000000000006"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="322" id="ZSy-OA-t0d"/>
+                                    <constraint firstAttribute="height" constant="193" id="lHM-xm-WrP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5eI-0z-xwI"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pJC-el-NUX" firstAttribute="centerY" secondItem="2gm-ot-tve" secondAttribute="centerY" id="2GN-x3-nmm"/>
+                            <constraint firstItem="pJC-el-NUX" firstAttribute="centerX" secondItem="2gm-ot-tve" secondAttribute="centerX" id="auF-3i-DB3"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultImage" destination="pJC-el-NUX" id="9Fz-Ce-zqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I03-aL-JKr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-651.14503816793888" y="116.90140845070422"/>
+        </scene>
+    </scenes>
+</document>
