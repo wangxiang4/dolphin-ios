@@ -1,7 +1,7 @@
 //
 //  全局应用配置
-//  Created by 福尔摩翔 on 2022/12/5.
-//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//  Created by wangxiang4 on 2022/12/5.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import SwiftUI
@@ -9,15 +9,15 @@ struct Configs {
 
     // APP配置
     struct App {
-        static let baseUrl = "http://120.26.168.56:9999"
-        static let gatewayAseEncodeSecret = "changsha-kanglai"
-        static let bundleIdentifier = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String ?? "KanglaiCall"
+        static let baseUrl = "http://123.60.163.167:9999"
+        static let gatewayAseEncodeSecret = "dolphin-platform"
+        static let bundleIdentifier = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String ?? "Dolphin"
     }
     
     // 缓存键配置
     struct CacheKey {
-        static let tokenEnhancerKey = "ENTFRM_TOKEN_KEY"
-        static let userInfoKey = "ENTFRM_USER_INFO_KEY"
+        static let tokenEnhancerKey = "DOLPHIN_TOKEN_KEY"
+        static let userInfoKey = "DOLPHIN_USER_INFO_KEY"
         static let firstLoadKey = "FIRST_LOAD_KEY"
     }
 

@@ -1,7 +1,7 @@
 //
 //  右耳遮罩动画部分,需要遮住要不然执行耳朵动画耳朵会露出来
-//  Created by 福尔摩翔 on 2022/12/5.
-//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//  Created by wangxiang4 on 2022/12/5.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import SwiftUI

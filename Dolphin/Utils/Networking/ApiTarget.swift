@@ -1,8 +1,8 @@
 //
 //  Api目标类型枚举
 //  https://github.com/Moya/Moya/tree/master/docs_CN
-//  Created by 福尔摩翔 on 2022/12/7.
-//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//  Created by wangxiang4 on 2022/12/7.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import RxSwift

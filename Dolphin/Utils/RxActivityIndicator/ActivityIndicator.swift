@@ -2,7 +2,7 @@
 //  监听可观测活动对象序列
 //  如果正在进行至少一个序列计算,则将发送 true
 //  当所有活动完成时,将发送 false
-//  Created by 福尔摩翔 on 2022/11/27.
+//  Created by wangxiang4 on 2022/11/27.
 //  Copyright © 2022 entfrm All rights reserved.
 //
 

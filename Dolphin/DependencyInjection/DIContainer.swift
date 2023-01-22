@@ -1,8 +1,8 @@
 //
 //  依赖注入管理容器
 //  https://github.com/Swinject/Swinject/tree/master/Documentation
-//  Created by 福尔摩翔 on 2022/12/5.
-//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//  Created by wangxiang4 on 2022/12/5.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import Swinject

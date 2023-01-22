@@ -1,7 +1,7 @@
 //
 //  动物动画图片资源
-//  Created by 福尔摩翔 on 2022/12/13.
-//  Copyright © 2022 entfrm-wangxiang. All rights reserved.
+//  Created by wangxiang4 on 2022/12/13.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import SwiftUI
