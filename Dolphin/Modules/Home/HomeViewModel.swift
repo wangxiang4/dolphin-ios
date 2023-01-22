@@ -24,13 +24,13 @@ class HomeViewModel: ViewModel, ViewModelType {
         let elements = BehaviorRelay<[HomeSection]>(value: [])
         var items: [HomeSection] = []
         
-        let notificationCellViewModel = HomeCellViewModel(with: "演示通知", detail: nil,image: R.image.icon_tabbar_activity()?.template, hidesDisclosure: false)
-        let flashCellViewModel = HomeCellViewModel(with: "演示闪光灯", detail: nil,image: R.image.icon_cell_updated()?.template, hidesDisclosure: false)
-        let vibrationCellViewModel = HomeCellViewModel(with: "演示震动", detail: nil,image: R.image.icon_cell_size()?.template, hidesDisclosure: false)
-        let voiceCellViewModel = HomeCellViewModel(with: "演示语音播报", detail: nil,image: R.image.icon_cell_night_mode()?.template, hidesDisclosure: false)
-        let settingsCellViewModel = HomeCellViewModel(with: "演示跳转软件设置", detail: nil,image: R.image.icon_tabbar_settings()?.template, hidesDisclosure: false)
-        let cameraCellViewModel = HomeCellViewModel(with: "演示打开照相机", detail: nil,image: R.image.icon_cell_profile_summary()?.template, hidesDisclosure: false)
-        let albumCellViewModel = HomeCellViewModel(with: "演示打开相册", detail: nil,image: R.image.icon_cell_submodule()?.template, hidesDisclosure: false)
+        let notificationCellViewModel = HomeCellViewModel(with: "消息通知", detail: nil,image: R.image.icon_tabbar_activity()?.template, hidesDisclosure: false)
+        let flashCellViewModel = HomeCellViewModel(with: "闪光灯通知", detail: nil,image: R.image.icon_cell_updated()?.template, hidesDisclosure: false)
+        let vibrationCellViewModel = HomeCellViewModel(with: "震动反馈", detail: nil,image: R.image.icon_cell_size()?.template, hidesDisclosure: false)
+        let voiceCellViewModel = HomeCellViewModel(with: "语音播报", detail: nil,image: R.image.icon_cell_night_mode()?.template, hidesDisclosure: false)
+        let settingsCellViewModel = HomeCellViewModel(with: "跳转软件设置", detail: nil,image: R.image.icon_tabbar_settings()?.template, hidesDisclosure: false)
+        let cameraCellViewModel = HomeCellViewModel(with: "打开照相机", detail: nil,image: R.image.icon_cell_profile_summary()?.template, hidesDisclosure: false)
+        let albumCellViewModel = HomeCellViewModel(with: "打开相册", detail: nil,image: R.image.icon_cell_submodule()?.template, hidesDisclosure: false)
         
         items.append(HomeSection.setting(title: "", items: [
             HomeSectionItem.notificationItem(viewModel: notificationCellViewModel),

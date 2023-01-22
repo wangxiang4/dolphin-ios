@@ -12,25 +12,25 @@ enum HomeSection {
 }
 
 enum HomeSectionItem {
-    // 演示通知
+    // 消息通知
     case notificationItem(viewModel: HomeCellViewModel)
     
-    // 演示闪光灯
+    // 闪光灯通知
     case flashItem(viewModel: HomeCellViewModel)
     
-    // 演示震动
+    // 震动反馈
     case vibrationItem(viewModel: HomeCellViewModel)
     
-    // 演示语音播报
+    // 语音播报
     case voiceItem(viewModel: HomeCellViewModel)
     
-    // 演示跳转软件设置
+    // 跳转软件设置
     case settingsItem(viewModel: HomeCellViewModel)
     
-    // 演示打开照相机
+    // 打开照相机
     case cameraItem(viewModel: HomeCellViewModel)
     
-    // 演示打开相册
+    // 打开相册
     case albumItem(viewModel: HomeCellViewModel)
 }
 

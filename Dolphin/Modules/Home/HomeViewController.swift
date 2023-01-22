@@ -100,7 +100,7 @@ class HomeViewController: TableViewController {
                 let content = UNMutableNotificationContent.init()
                 content.badge = NSNumber(value: (UIApplication.shared.applicationIconBadgeNumber + 1))
                 content.sound = UNNotificationSound.default
-                content.body = "康来生物科技有限公司呼叫器"
+                content.body = "海豚架构平台生态圈"
                 content.subtitle = "foobar"
                 // 传递用户扩展数据
                 let detail = "这是一条测试数据"

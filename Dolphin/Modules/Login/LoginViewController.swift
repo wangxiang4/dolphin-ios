@@ -159,7 +159,7 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         let deadlineTime = DispatchTime.now() + .milliseconds(100)
 
         if textField == usernameTextField {
-            // 🤪 输入文字开始动物头部旋转动画
+            // 🐳 输入文字开始动物头部旋转动画
             DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
                 let fractionComplete = self.fractionComplete(for: textField)
                 self.critterView.startHeadRotation(startAt: fractionComplete)
@@ -282,7 +282,7 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
             nightModeEnabled.accept(!ThemeType.currentTheme().isDark)
         }).disposed(by: rx.disposeBag)
         
-        // ☠️登录视图模型绑定
+        // 🧑‍💻登录视图模型绑定
         guard let viewModel = viewModel as? LoginViewModel else { return }
         let loginTrigger = PublishSubject<Void>()
         loginButton.rx.tap.asDriver().drive(onNext: { [weak self] () in
@@ -376,13 +376,13 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         passwordTextField.isSecureTextEntry = !isPasswordVisible
         critterView.isPeeking = isPasswordVisible
 
-        // 🤡 将光标移动到字符的最后
+        // 🧑‍💻 将光标移动到字符的最后
         if let textRange = passwordTextField.textRange(from: passwordTextField.beginningOfDocument, to: passwordTextField.endOfDocument), let password = passwordTextField.text {
             passwordTextField.replace(textRange, withText: password)
         }
     }
 
-    // MARK: - Notifications 🥶
+    // MARK: - Notifications 🐳
     private func setUpNotification() {
         // 监听应用进入后台通知
         notificationCenter.addObserver(self, selector: #selector(applicationDidEnterBackground), name: UIApplication.didEnterBackgroundNotification, object: nil)

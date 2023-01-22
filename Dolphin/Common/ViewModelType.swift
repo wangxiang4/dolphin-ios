@@ -63,7 +63,7 @@ class ViewModel: NSObject {
             
         }.filterNil().bind(to: requestError).disposed(by: rx.disposeBag)
         
-        // 🤪打印请求错误输出
+        // 🧑‍💻打印请求错误输出
         requestError.subscribe(onNext: { (error) in
             logError("\(error)")
         }).disposed(by: rx.disposeBag)
