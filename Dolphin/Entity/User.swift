@@ -57,12 +57,6 @@ class User: CommonEntity {
     /** 最后登陆时间 */
     var loginTime: String?
 
-    /** 地图标记点位置图片旋转值 */
-    var mapOrientation: Double?
-
-    /** 地图设计器默认中心点位置 */
-    var mapCenter: String?
-
     /** 用户状态 */
     var status: String?
     
@@ -87,8 +81,6 @@ class User: CommonEntity {
         sex <- map["sex"]
         loginIp <- map["loginIp"]
         loginTime <- map["loginTime"]
-        mapOrientation <- map["mapOrientation"]
-        mapCenter <- map["mapCenter"]
         status <- map["status"]
         
     }
