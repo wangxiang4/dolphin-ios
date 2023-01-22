@@ -12,6 +12,7 @@
 		0757B53421669DAC00C04163 /* LanguageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0757B52F21669DAC00C04163 /* LanguageCell.xib */; };
 		0757B53A2166A6A000C04163 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0757B53C2166A6A000C04163 /* Localizable.strings */; };
 		0791946D214D4F0700A7067E /* ThemeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0791946B214D4F0700A7067E /* ThemeCell.xib */; };
+		2E023CDE297D49F6008BEFD5 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2E023CDD297D49F6008BEFD5 /* LICENSE */; };
 		2E2EC4292942E61E0083C12C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EC4282942E61E0083C12C /* MainViewController.swift */; };
 		2E2EC4332942F25F0083C12C /* main.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E2EC4322942F25F0083C12C /* main.gif */; };
 		2E3AC6A2293B5295006303E3 /* DolphinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3AC6A0293B5295006303E3 /* DolphinUITests.swift */; };
@@ -23,7 +24,7 @@
 		2E590935293E15FE00EA7E42 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E590934293E15FE00EA7E42 /* DIContainer.swift */; };
 		2E7F944A294B4940009DE5D1 /* ResponseException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F9449294B4940009DE5D1 /* ResponseException.swift */; };
 		2E7F944D294B9695009DE5D1 /* StrUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F944C294B9695009DE5D1 /* StrUtil.swift */; };
-		2E7F944F294BB91B009DE5D1 /* KiccUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F944E294BB91B009DE5D1 /* KiccUser.swift */; };
+		2E7F944F294BB91B009DE5D1 /* DolphinUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F944E294BB91B009DE5D1 /* DolphinUser.swift */; };
 		2E7F9451294C4311009DE5D1 /* BaseEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F9450294C4311009DE5D1 /* BaseEntity.swift */; };
 		2E7F9453294C4741009DE5D1 /* CommonEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F9452294C4741009DE5D1 /* CommonEntity.swift */; };
 		2E7F9455294C4B78009DE5D1 /* TreeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7F9454294C4B78009DE5D1 /* TreeEntity.swift */; };
@@ -200,6 +201,7 @@
 		07FC33841FFFE54800D53888 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		084ABED7F43FA778348AAF1F /* Pods_Dolphin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dolphin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D5FA574F95E4BA4DAE457A5 /* Pods-DolphinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DolphinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DolphinTests/Pods-DolphinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2E023CDD297D49F6008BEFD5 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		2E2EC4282942E61E0083C12C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2E2EC4322942F25F0083C12C /* main.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = main.gif; sourceTree = "<group>"; };
 		2E3AC6A0293B5295006303E3 /* DolphinUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DolphinUITests.swift; sourceTree = "<group>"; };
@@ -211,7 +213,7 @@
 		2E590934293E15FE00EA7E42 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		2E7F9449294B4940009DE5D1 /* ResponseException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseException.swift; sourceTree = "<group>"; };
 		2E7F944C294B9695009DE5D1 /* StrUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrUtil.swift; sourceTree = "<group>"; };
-		2E7F944E294BB91B009DE5D1 /* KiccUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiccUser.swift; sourceTree = "<group>"; };
+		2E7F944E294BB91B009DE5D1 /* DolphinUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DolphinUser.swift; sourceTree = "<group>"; };
 		2E7F9450294C4311009DE5D1 /* BaseEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseEntity.swift; sourceTree = "<group>"; };
 		2E7F9452294C4741009DE5D1 /* CommonEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonEntity.swift; sourceTree = "<group>"; };
 		2E7F9454294C4B78009DE5D1 /* TreeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeEntity.swift; sourceTree = "<group>"; };
@@ -411,7 +413,7 @@
 				2E8DC9E1293B1506002B8482 /* User.swift */,
 				A034AF6F21527EF8004C310B /* Notification.swift */,
 				07B2C1F3213AD4CA00FE7AC0 /* TokenEnhancer.swift */,
-				2E7F944E294BB91B009DE5D1 /* KiccUser.swift */,
+				2E7F944E294BB91B009DE5D1 /* DolphinUser.swift */,
 				2E7F9450294C4311009DE5D1 /* BaseEntity.swift */,
 				2E7F9452294C4741009DE5D1 /* CommonEntity.swift */,
 				2E7F9454294C4B78009DE5D1 /* TreeEntity.swift */,
@@ -450,9 +452,10 @@
 		07FC33781FFFE2BD00D53888 /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				C762C66E1E1D58B200C09EBD /* Configs.swift */,
 				07FC33821FFFE53800D53888 /* .gitignore */,
 				07FC33801FFFE52A00D53888 /* .swiftlint.yml */,
-				C762C66E1E1D58B200C09EBD /* Configs.swift */,
+				2E023CDD297D49F6008BEFD5 /* LICENSE */,
 				07FC33841FFFE54800D53888 /* README.md */,
 			);
 			path = Configs;
@@ -947,7 +950,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 1250;
-				ORGANIZATIONNAME = "wangxiang4";
+				ORGANIZATIONNAME = wangxiang4;
 				TargetAttributes = {
 					A09499511E1D1CB600EFDE29 = {
 						CreatedOnToolsVersion = 8.2;
@@ -1001,6 +1004,7 @@
 				A0E2B088210625C0000DA282 /* SettingSwitchCell.xib in Resources */,
 				A09499601E1D1CB700EFDE29 /* LaunchScreen.storyboard in Resources */,
 				C762C6251E1D417C00C09EBD /* Assets.xcassets in Resources */,
+				2E023CDE297D49F6008BEFD5 /* LICENSE in Resources */,
 				A094995B1E1D1CB600EFDE29 /* Main.storyboard in Resources */,
 				2EB6D61D2937A63F00AEBD7B /* 2048.jpeg in Resources */,
 				070FF84B20F285180070F5E8 /* SettingCell.xib in Resources */,
@@ -1217,7 +1221,7 @@
 			);
 			name = R.swift;
 			outputPaths = (
-				"$SRCROOT/Dolphin/Resources/R.generated.swift",
+				$SRCROOT/Dolphin/Resources/R.generated.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1307,7 +1311,7 @@
 				2E88CBE4293AC4CB0068227A /* LibsManager.swift in Sources */,
 				2E88CBE5293AC4CB0068227A /* LogManager.swift in Sources */,
 				2E9E529F2940B67A008C885E /* Networking.swift in Sources */,
-				2E7F944F294BB91B009DE5D1 /* KiccUser.swift in Sources */,
+				2E7F944F294BB91B009DE5D1 /* DolphinUser.swift in Sources */,
 				2E88CBE6293AC4CB0068227A /* Reachability.swift in Sources */,
 				2E59092F293E0A7A00EA7E42 /* AppAssembly.swift in Sources */,
 				2E4756F92949FC2300F69DC2 /* LoginViewModel.swift in Sources */,
