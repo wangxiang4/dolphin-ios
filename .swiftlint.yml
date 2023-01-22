@@ -2,7 +2,7 @@
 # 配置参考文档:
 # https://realm.github.io/SwiftLint/rule-directory.html
 # https://github.com/realm/SwiftLint/blob/main/README_CN.md
-# @author: entfrm开发团队-王翔
+# @author: wangxiang4
 # @create: 2022/12/3
 
 # 执行时排除掉的规则
@@ -32,7 +32,6 @@ included:
 excluded:
   - Pods
   - Dolphin/Resources/R.generated.swift
-  - Dolphin/Networking/GraphQL/API.swift
 
 # 可配置的规则可以通过这个配置文件来自定义
 # 二进制规则可以设置他们的严格程度

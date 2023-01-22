@@ -19,7 +19,6 @@ xcuserdata/
 
 # 排除Obj-C/Swift文件
 *.hmap
-*.ipa
 *.dSYM.zip
 *.dSYM
 

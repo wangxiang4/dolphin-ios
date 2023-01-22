@@ -1,7 +1,7 @@
 //
 //  默认平板分割视图控制器右视图场景
 //  Created by wangxiang4 on 2022/11/27.
-//  Copyright © 2022 entfrm All rights reserved.
+//  Copyright © 2022 dolphin-community. All rights reserved.
 //
 
 import SwiftUI
