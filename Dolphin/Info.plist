@@ -21,7 +21,7 @@
 			<string>Editor</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>KanglaiCall</string>
+				<string>Dolphin</string>
 			</array>
 		</dict>
 	</array>
@@ -35,11 +35,11 @@
 		<true/>
 	</dict>
 	<key>NSCameraUsageDescription</key>
-	<string>康来呼叫器需要您的同意,才能访问联系人相机</string>
+	<string>海豚生态需要您的同意,才能访问联系人相机</string>
 	<key>NSContactsUsageDescription</key>
-	<string>康来呼叫器需要您的同意,才能访问联系人</string>
+	<string>海豚生态需要您的同意,才能访问联系人</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>康来呼叫器需要您的同意,才能访问相册</string>
+	<string>海豚生态需要您的同意,才能访问相册</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

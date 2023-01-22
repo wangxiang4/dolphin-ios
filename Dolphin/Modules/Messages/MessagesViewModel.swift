@@ -1,5 +1,5 @@
 //
-//  通知视图模型
+//  消息通知视图模型
 //  Created by wangxiang4 on 2022/11/29.
 //  Copyright © 2022 dolphin-community. All rights reserved.
 //
@@ -9,7 +9,7 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 
-class NotificationsViewModel: ViewModel, ViewModelType {
+class MessagesViewModel: ViewModel, ViewModelType {
 
     struct Input {
         let headerRefresh: Observable<Void>
@@ -17,7 +17,7 @@ class NotificationsViewModel: ViewModel, ViewModelType {
     }
 
     struct Output {
-        let items: BehaviorRelay<[NotificationCellViewModel]>
+        let items: BehaviorRelay<[MessageCellViewModel]>
         let rowSelected: Driver<OSSFile>
     }
 
@@ -27,7 +27,7 @@ class NotificationsViewModel: ViewModel, ViewModelType {
     let rowSelected = PublishSubject<OSSFile>()
     
     func transform(input: Input) -> Output {
-        let elements = BehaviorRelay<[NotificationCellViewModel]>(value: [])
+        let elements = BehaviorRelay<[MessageCellViewModel]>(value: [])
         
         // 处理头部刷新
         input.headerRefresh.flatMapLatest({ [weak self] in
@@ -40,8 +40,8 @@ class NotificationsViewModel: ViewModel, ViewModelType {
                 .map { $0 }
         }).subscribe(onNext: { result in
             if result.code == result.SUCCESS, let data = result.data {
-                let items = data.map({ item -> NotificationCellViewModel in
-                    let viewModel = NotificationCellViewModel(with: item)
+                let items = data.map({ item -> MessageCellViewModel in
+                    let viewModel = MessageCellViewModel(with: item)
                     viewModel.rowSelected.bind(to: self.rowSelected).disposed(by: self.rx.disposeBag)
                     return viewModel
                 })
@@ -61,8 +61,8 @@ class NotificationsViewModel: ViewModel, ViewModelType {
                 .map { $0 }
         }).subscribe(onNext: { result in
             if result.code == result.SUCCESS, let data = result.data {
-                let items = data.map({ item -> NotificationCellViewModel in
-                    let viewModel = NotificationCellViewModel(with: item)
+                let items = data.map({ item -> MessageCellViewModel in
+                    let viewModel = MessageCellViewModel(with: item)
                     viewModel.rowSelected.bind(to: self.rowSelected).disposed(by: self.rx.disposeBag)
                     return viewModel
                 })

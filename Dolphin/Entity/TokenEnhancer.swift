@@ -30,7 +30,7 @@ struct TokenEnhancer: Mappable {
     var token_type: String?
 
     /** 用户信息 */
-    var user_info: KiccUser?
+    var user_info: DolphinUser?
     
     init?(map: Map) {}
     init() {}

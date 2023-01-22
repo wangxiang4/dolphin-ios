@@ -29,9 +29,9 @@
 "Toast.ConnectionLost.Message" = "No connection";
 
 /* 主页TabBar */
-"Home.TabBar.home.Title" = "Home";
-"Home.TabBar.workbench.Title" = "Workbench";
-"Home.TabBar.Notifications.Title" = "Notification";
+"Home.TabBar.Home.Title" = "Home";
+"Home.TabBar.Workbench.Title" = "Workbench";
+"Home.TabBar.Messages.Title" = "Messages";
 "Home.TabBar.Settings.Title" = "Settings";
 
 /* 设置 */

@@ -7,7 +7,7 @@
 import SwiftUI
 import RxSwift
 
-class NotificationCell: DefaultTableViewCell {
+class MessageCell: DefaultTableViewCell {
     
     override func makeUI() {
         super.makeUI()
@@ -17,7 +17,7 @@ class NotificationCell: DefaultTableViewCell {
     
     override func bind(to viewModel: TableViewCellViewModel) {
         super.bind(to: viewModel)
-        guard let viewModel = viewModel as? NotificationCellViewModel else { return }
+        guard let viewModel = viewModel as? MessageCellViewModel else { return }
         
         // 不能使用 rx.disposeBag 重用列,rx销毁冲突
         cellDisposeBag = DisposeBag()

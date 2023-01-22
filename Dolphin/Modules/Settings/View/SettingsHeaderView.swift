@@ -40,7 +40,7 @@ class SettingsHeaderView: UIView {
         let imageView = UIImageView()
         imageView.cornerRadius = 20
         imageView.image = UIImage(named: "icon_user_tom")
-        let url = URL(string: "https://github.com/wangxiang4/loquat-form-design/raw/master/public/image/sample1.gif")
+        let url = URL(string: "https://vuejs.godolphinx.org/resource/img/logo.svg")
         imageView.kf.setImage(with: url)
         return imageView
     }()

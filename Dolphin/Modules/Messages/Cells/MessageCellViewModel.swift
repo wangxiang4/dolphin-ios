@@ -8,7 +8,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class NotificationCellViewModel: DefaultTableViewCellViewModel {
+class MessageCellViewModel: DefaultTableViewCellViewModel {
 
     // 行数据
     let ossFile: OSSFile?

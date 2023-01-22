@@ -7,7 +7,7 @@
 import Quick
 import Nimble
 import RxSwift
-@testable import KanglaiCall
+@testable import Dolphin
 
 class UsersViewModelTests: QuickSpec {
     

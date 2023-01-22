@@ -1,6 +1,6 @@
 //
 //  MainViewController.swift
-//  KanglaiCall
+//  Dolphin
 //
 //  Created by wangxiang4 on 2022/12/9.
 //  Copyright © 2022 dolphin-community. All rights reserved.

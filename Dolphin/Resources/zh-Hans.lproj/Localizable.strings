@@ -29,9 +29,9 @@
 "Toast.ConnectionLost.Message" = "网络已断开";
 
 /* 主页TabBar */
-"Home.TabBar.home.Title" = "首页";
-"Home.TabBar.workbench.Title" = "工作台";
-"Home.TabBar.Notifications.Title" = "通知";
+"Home.TabBar.Home.Title" = "首页";
+"Home.TabBar.Workbench.Title" = "工作台";
+"Home.TabBar.Messages.Title" = "消息";
 "Home.TabBar.Settings.Title" = "设置";
 
 /* 设置 */

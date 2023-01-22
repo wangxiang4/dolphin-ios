@@ -12,7 +12,7 @@ class BaseEntity: Mappable {
     var tenantId: String?
 
     /** 当前用户 */
-    var currentUser: KiccUser?
+    var currentUser: DolphinUser?
     
     required init?(map: Map) {}
     init() {}

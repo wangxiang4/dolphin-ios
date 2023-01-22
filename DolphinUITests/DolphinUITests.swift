@@ -6,7 +6,7 @@
 
 import XCTest
 
-class KanglaiCallUITests: XCTestCase {
+class DolphinUITests: XCTestCase {
 
     override func setUp() {
         super.setUp()

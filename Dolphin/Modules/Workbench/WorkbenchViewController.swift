@@ -185,7 +185,7 @@ class WorkbenchViewController: ViewController {
         let label = UILabel()
         label.theme.textColor = themeService.attribute { $0.textGray }
         label.font = UIFont.boldSystemFont(ofSize: 12)
-        label.text = "康来研发中心移动审批工作台"
+        label.text = "海豚生态平台审批工作台"
         return label
     }()
     

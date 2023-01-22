@@ -6,7 +6,7 @@
 
 import Quick
 import Nimble
-@testable import KanglaiCall
+@testable import Dolphin
 
 class UserTests: QuickSpec {
 

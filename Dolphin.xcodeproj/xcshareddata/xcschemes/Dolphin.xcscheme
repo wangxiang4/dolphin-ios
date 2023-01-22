@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-               BuildableName = "&#x5eb7;&#x6765;&#x547c;&#x53eb;&#x5668;.app"
+               BuildableName = "&#x6d77;&#x8c5a;&#x751f;&#x6001;.app"
                BlueprintName = "Dolphin"
                ReferencedContainer = "container:Dolphin.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "&#x5eb7;&#x6765;&#x547c;&#x53eb;&#x5668;.app"
+            BuildableName = "&#x6d77;&#x8c5a;&#x751f;&#x6001;.app"
             BlueprintName = "Dolphin"
             ReferencedContainer = "container:Dolphin.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A09499511E1D1CB600EFDE29"
-            BuildableName = "&#x5eb7;&#x6765;&#x547c;&#x53eb;&#x5668;.app"
+            BuildableName = "&#x6d77;&#x8c5a;&#x751f;&#x6001;.app"
             BlueprintName = "Dolphin"
             ReferencedContainer = "container:Dolphin.xcodeproj">
          </BuildableReference>

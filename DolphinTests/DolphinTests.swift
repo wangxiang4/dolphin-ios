@@ -5,9 +5,9 @@
 //
 
 import XCTest
-@testable import KanglaiCall
+@testable import Dolphin
 
-class KanglaiCallTests: XCTestCase {
+class DolphinTests: XCTestCase {
 
     override func setUp() {
         super.setUp()

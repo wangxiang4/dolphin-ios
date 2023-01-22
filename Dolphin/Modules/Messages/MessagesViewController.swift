@@ -10,9 +10,9 @@ import RxCocoa
 import RxDataSources
 import Toast_Swift
 
-private let reuseIdentifier = R.reuseIdentifier.notificationCell.identifier
+private let reuseIdentifier = R.reuseIdentifier.messageCell.identifier
 
-class NotificationsViewController: TableViewController {
+class MessagesViewController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,9 +21,9 @@ class NotificationsViewController: TableViewController {
     override func makeUI() {
         super.makeUI()
         languageChanged.subscribe(onNext: { [weak self] () in
-            self?.navigationTitle = R.string.localizable.homeTabBarNotificationsTitle.key.localized()
+            self?.navigationTitle = R.string.localizable.homeTabBarMessagesTitle.key.localized()
         }).disposed(by: rx.disposeBag)
-        tableView.register(R.nib.notificationCell)
+        tableView.register(R.nib.messageCell)
     }
 
     override func bindViewModel() {
@@ -32,13 +32,13 @@ class NotificationsViewController: TableViewController {
         viewModel?.requestError.subscribe(onNext: { [weak self] (error) in
             self?.view.makeToast(error.errMessage, image: R.image.icon_toast_warning())
         }).disposed(by: rx.disposeBag)
-        guard let viewModel = viewModel as? NotificationsViewModel else { return }
+        guard let viewModel = viewModel as? MessagesViewModel else { return }
         let refresh = Observable.of(Observable.just(()), headerRefreshTrigger).merge()
-        let input = NotificationsViewModel.Input(headerRefresh: refresh, footerRefresh: footerRefreshTrigger)
+        let input = MessagesViewModel.Input(headerRefresh: refresh, footerRefresh: footerRefreshTrigger)
         let output = viewModel.transform(input: input)
         
         output.items.asDriver(onErrorJustReturn: [])
-            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: NotificationCell.self)) { tableView, viewModel, cell in
+            .drive(tableView.rx.items(cellIdentifier: reuseIdentifier, cellType: MessageCell.self)) { tableView, viewModel, cell in
                 cell.bind(to: viewModel)
             }.disposed(by: rx.disposeBag)
         
@@ -46,7 +46,7 @@ class NotificationsViewController: TableViewController {
             logDebug("\(item.toJSON())")
             var style = ToastManager.shared.style
             style.backgroundColor = UIColor.Material.green
-            self?.view.makeToast("轻点 你把我点痛了。当前行数据为:\(item.toJSON())", position: .top, style: style)
+            self?.view.makeToast("当前行数据为:\(item.toJSON())", position: .top, style: style)
         }).disposed(by: rx.disposeBag)
     }
 }

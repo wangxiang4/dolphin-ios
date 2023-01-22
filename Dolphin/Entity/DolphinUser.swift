@@ -6,7 +6,7 @@
 
 import Foundation
 import ObjectMapper
-class KiccUser: Mappable {
+class DolphinUser: Mappable {
     
     /** 用户id */
     var id: String?

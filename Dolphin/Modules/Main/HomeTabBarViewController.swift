@@ -13,8 +13,8 @@ import WhatsNewKit
 
 enum HomeTabBarItem: Int, CaseIterable {
     
-    // 导航栏包含(首页,工作台,通知,设置)
-    case home, workbench, notifications, settings
+    // 导航栏包含(首页,工作台,消息,设置)
+    case home, workbench, messages, settings
 
     private func controller(with viewModel: ViewModel) -> UIViewController {
         switch self {
@@ -24,8 +24,8 @@ enum HomeTabBarItem: Int, CaseIterable {
         case .workbench:
             let vc = WorkbenchViewController(viewModel: viewModel)
             return NavigationController(rootViewController: vc)
-        case .notifications:
-            let vc = NotificationsViewController(viewModel: viewModel)
+        case .messages:
+            let vc = MessagesViewController(viewModel: viewModel)
             return NavigationController(rootViewController: vc)
         case .settings:
             let vc = SettingsViewController(viewModel: viewModel)
@@ -38,7 +38,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         switch self {
         case .home: return R.image.icon_tabbar_home()
         case .workbench: return R.image.icon_tabbar_workbench()
-        case .notifications: return R.image.icon_tabbar_activity()
+        case .messages: return R.image.icon_tabbar_activity()
         case .settings: return R.image.icon_tabbar_settings()
         }
     }
@@ -48,7 +48,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         switch self {
         case .home: return R.string.localizable.homeTabBarHomeTitle.key.localized()
         case .workbench: return R.string.localizable.homeTabBarWorkbenchTitle.key.localized()
-        case .notifications: return R.string.localizable.homeTabBarNotificationsTitle.key.localized()
+        case .messages: return R.string.localizable.homeTabBarMessagesTitle.key.localized()
         case .settings: return R.string.localizable.homeTabBarSettingsTitle.key.localized()
         }
     }
@@ -58,7 +58,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         switch self {
         case .home: animation = RAMBounceAnimation()
         case .workbench: animation = RAMBounceAnimation()
-        case .notifications: animation = RAMBounceAnimation()
+        case .messages: animation = RAMBounceAnimation()
         case .settings: animation = RAMRightRotationAnimation()
         }
         animation.theme.iconSelectedColor = themeService.attribute { $0.secondary }
