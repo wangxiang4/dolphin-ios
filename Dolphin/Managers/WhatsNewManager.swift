@@ -21,18 +21,18 @@ class WhatsNewManager: NSObject {
         let whatsNew = WhatsNew(
             title: R.string.localizable.whatsNewTitle.key.localized(),
             items: [
-                WhatsNew.Item(title: R.string.localizable.whatsNewItem4Title.key.localized(),
-                              subtitle: R.string.localizable.whatsNewItem4Subtitle.key.localized(),
-                              image: R.image.icon_whatsnew_trending()),
                 WhatsNew.Item(title: R.string.localizable.whatsNewItem1Title.key.localized(),
                               subtitle: R.string.localizable.whatsNewItem1Subtitle.key.localized(),
-                              image: R.image.icon_whatsnew_cloc()),
+                              image: R.image.icon_whatsnew_mvvm()),
                 WhatsNew.Item(title: R.string.localizable.whatsNewItem2Title.key.localized(),
                               subtitle: R.string.localizable.whatsNewItem2Subtitle.key.localized(),
-                              image: R.image.icon_whatsnew_theme()),
+                              image: R.image.icon_whatsnew_color()),
                 WhatsNew.Item(title: R.string.localizable.whatsNewItem3Title.key.localized(),
                               subtitle: R.string.localizable.whatsNewItem3Subtitle.key.localized(),
-                              image: R.image.icon_whatsnew_cloc())
+                              image: R.image.icon_whatsnew_ios()),
+                WhatsNew.Item(title: R.string.localizable.whatsNewItem4Title.key.localized(),
+                              subtitle: R.string.localizable.whatsNewItem4Subtitle.key.localized(),
+                              image: R.image.icon_whatsnew_ioc())
             ])
         return whatsNew
     }
