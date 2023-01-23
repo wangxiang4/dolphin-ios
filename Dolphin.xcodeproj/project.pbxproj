@@ -16,7 +16,6 @@
 		2E023CE4297D87A6008BEFD5 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E023CE3297D87A6008BEFD5 /* R.generated.swift */; };
 		2E2EC4292942E61E0083C12C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2EC4282942E61E0083C12C /* MainViewController.swift */; };
 		2E3AC6A2293B5295006303E3 /* DolphinUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3AC6A0293B5295006303E3 /* DolphinUITests.swift */; };
-		2E3AC6A3293B5295006303E3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E3AC6A1293B5295006303E3 /* Info.plist */; };
 		2E440F0A29402749001E4CF9 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E440F0929402749001E4CF9 /* View.swift */; };
 		2E4756F92949FC2300F69DC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E4756F82949FC2300F69DC2 /* LoginViewModel.swift */; };
 		2E480A632944637E007DEF87 /* SettingsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E480A622944637E007DEF87 /* SettingsHeaderView.swift */; };
@@ -1024,7 +1023,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E3AC6A3293B5295006303E3 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1647,6 +1645,8 @@
 			baseConfigurationReference = D8DA7F8623AF7AEFE4DC35EA /* Pods-DolphinUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DolphinUITests/Info.plist;
@@ -1657,8 +1657,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.public.DolphinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dolphin;
 			};
 			name = Debug;
 		};
@@ -1667,6 +1669,8 @@
 			baseConfigurationReference = AD4D211B6BCE93B869B0DFC0 /* Pods-DolphinUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DolphinUITests/Info.plist;
@@ -1677,8 +1681,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.public.DolphinUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Dolphin;
 			};
 			name = Release;
 		};
