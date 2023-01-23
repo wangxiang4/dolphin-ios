@@ -687,10 +687,10 @@
 		A09499691E1D1CB700EFDE29 /* DolphinTests */ = {
 			isa = PBXGroup;
 			children = (
-				A094996C1E1D1CB700EFDE29 /* Info.plist */,
 				0709DD78220A1C3F00F379FA /* Models */,
 				A0AEB3A4220D8CAD00A4B2AA /* Modules */,
 				A094996A1E1D1CB700EFDE29 /* DolphinTests.swift */,
+				A094996C1E1D1CB700EFDE29 /* Info.plist */,
 			);
 			path = DolphinTests;
 			sourceTree = "<group>";
@@ -698,9 +698,9 @@
 		A09499741E1D1CB700EFDE29 /* DolphinUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2E3AC6A1293B5295006303E3 /* Info.plist */,
 				2E9E52A629413AFA008C885E /* SnapshotHelper.swift */,
 				2E3AC6A0293B5295006303E3 /* DolphinUITests.swift */,
+				2E3AC6A1293B5295006303E3 /* Info.plist */,
 			);
 			path = DolphinUITests;
 			sourceTree = "<group>";

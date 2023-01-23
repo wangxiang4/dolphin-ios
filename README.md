@@ -87,6 +87,8 @@
 │  │  │  ├─RxActivityIndicator -- 监听可观测活动对象序列
 │  │  ├─Resources -- 资源管理
 │  ├─ DolphinTests -- APP单元测试
+│  │  ├─Models -- 数据映射实体测试
+│  │  ├─Modules -- 场景模块测试
 │  ├─ DolphinUITests -- APP单元自动化UI界面交互测试
 ```
 
