@@ -18,7 +18,7 @@ final class DIContainer {
         // 初始化组装ioc对象
         assembler = Assembler(
             [
-                AppAssembly(),
+                AppAssembly()
             ],
             container: container)
     }

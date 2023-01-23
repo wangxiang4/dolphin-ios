@@ -1,5 +1,5 @@
 <h1 align="center">
-   <b>
+    <b>
         <a href="https://godolphinx.org"><img src="https://godolphinx.org/images/dolphin-platform-logo.svg" /></a><br>
     </b>
 </h1>
@@ -12,7 +12,7 @@
 </p>
 
 <div align="center">
-  <a href="https://godolphinx.org">
+  <a href="https://github.com/wangxiang4/dolphin-ios/blob/master/LICENSE">
     <img src="https://img.shields.io/npm/l/vue.svg?sanitize=true">
   </a>
   <a href="https://gitpod.io/#https://github.com/wangxiang4/dolphin-ios">
@@ -57,7 +57,37 @@
 
 ```
 ├─ dolphin-ios -- IOS海豚APP
-│  ├─ 等待完善。。。
+│  ├─ Dolphin -- APP
+│  │  ├─Application -- 应用程序初始化代理
+│  │  ├─Configs -- 全局配置
+│  │  ├─Common -- 通用组件基于SwiftUI进行扩展
+│  │  ├─Managers -- 应用控制管理
+│  │  ├─Entity -- 数据映射实体
+│  │  ├─Modules -- 场景模块
+│  │  │  ├─Login  --  登录场景
+│  │  │  ├─Home -- 首页场景
+│  │  │  ├─Main -- APP启动入口场景
+│  │  │  ├─Workbench -- 工作台场景
+│  │  │  ├─Messages -- 消息场景
+│  │  │  ├─Settings -- 应用设置场景
+│  │  │  ├─Settings Language -- 语言切换设置场景
+│  │  │  ├─Theme -- 主题颜色切换场景
+│  │  ├─DependencyInjection -- IOC依赖注入
+│  │  ├─Extensions -- 功能扩展
+│  │  │  ├─CATransform3D -- 核心动画3D视图变形扩展
+│  │  │  ├─object-c Foundation -- 基础库扩展
+│  │  │  ├─RxSwift -- 可观测响应式扩展
+│  │  │  ├─UIColor -- UI颜色组件扩展
+│  │  │  ├─UIFont -- UI字体组件扩展
+│  │  │  ├─UIImage -- UI图片组件扩展
+│  │  │  ├─UIView -- UI基础视图扩展
+│  │  ├─Utils -- 工具类
+│  │  │  ├─CommonUtil -- 通用工具
+│  │  │  ├─Networking -- Moya网络请求封装
+│  │  │  ├─RxActivityIndicator -- 监听可观测活动对象序列
+│  │  ├─Resources -- 资源管理
+│  ├─ DolphinTests -- APP单元测试
+│  ├─ DolphinUITests -- APP单元自动化UI界面交互测试
 ```
 
 
@@ -74,5 +104,4 @@
 
 ## 📄 执照
 [Dolphin Development Platform 是获得MIT许可](https://github.com/wangxiang4/dolphin-ios/blob/master/LICENSE) 的开源软件 。
-
 

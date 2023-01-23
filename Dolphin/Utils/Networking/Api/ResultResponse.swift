@@ -85,4 +85,3 @@ class BaseResultResponseObject<T: Mappable>: BaseResultResponse {
     }
     
 }
-

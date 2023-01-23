@@ -74,7 +74,7 @@
 		2E88CBE6293AC4CB0068227A /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = C762C68E1E1D5D6E00C09EBD /* Reachability.swift */; };
 		2E88CBE7293AC4CB0068227A /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07CE0F7F21027DEC00E1F6BD /* ThemeManager.swift */; };
 		2E88CBE8293AC4CB0068227A /* WhatsNewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071F761A21C6756D003EEB35 /* WhatsNewManager.swift */; };
-		2E88CBED293AC4CB0068227A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF6F21527EF8004C310B /* Notification.swift */; };
+		2E88CBED293AC4CB0068227A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF6F21527EF8004C310B /* Message.swift */; };
 		2E88CBF0293AC4CB0068227A /* TokenEnhancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B2C1F3213AD4CA00FE7AC0 /* TokenEnhancer.swift */; };
 		2E88CBF1293AC4CB0068227A /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8399F1293651C9002ADBC0 /* HomeCell.swift */; };
 		2E88CBF2293AC4CB0068227A /* HomeCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8399F3293651C9002ADBC0 /* HomeCellViewModel.swift */; };
@@ -260,7 +260,7 @@
 		A00C54C820E25B5A00DA5F98 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		A017B3DA1E92995300E4FCED /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		A034A8AD20F61A6500E2B678 /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
-		A034AF6F21527EF8004C310B /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		A034AF6F21527EF8004C310B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		A034AF72215280B3004C310B /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
 		A034AF74215280CA004C310B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		A034AF76215280EF004C310B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -411,7 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8DC9E1293B1506002B8482 /* User.swift */,
-				A034AF6F21527EF8004C310B /* Notification.swift */,
+				A034AF6F21527EF8004C310B /* Message.swift */,
 				07B2C1F3213AD4CA00FE7AC0 /* TokenEnhancer.swift */,
 				2E7F944E294BB91B009DE5D1 /* DolphinUser.swift */,
 				2E7F9450294C4311009DE5D1 /* BaseEntity.swift */,
@@ -1319,7 +1319,7 @@
 				2E88CBE7293AC4CB0068227A /* ThemeManager.swift in Sources */,
 				2E88CBE8293AC4CB0068227A /* WhatsNewManager.swift in Sources */,
 				2E480A632944637E007DEF87 /* SettingsHeaderView.swift in Sources */,
-				2E88CBED293AC4CB0068227A /* Notification.swift in Sources */,
+				2E88CBED293AC4CB0068227A /* Message.swift in Sources */,
 				2E88CBF0293AC4CB0068227A /* TokenEnhancer.swift in Sources */,
 				2E88CBF1293AC4CB0068227A /* HomeCell.swift in Sources */,
 				2E88CBF2293AC4CB0068227A /* HomeCellViewModel.swift in Sources */,

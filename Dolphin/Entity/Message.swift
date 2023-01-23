@@ -8,7 +8,7 @@ import Foundation
 import ObjectMapper
 
 
-// 通知演示OSS文件模型
+// xxx: 目前微服务那边消息模块没有数据,拿文件模块OSS文件模型做数据演示
 class OSSFile: CommonEntity {
     
     /**
