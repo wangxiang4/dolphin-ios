@@ -5,7 +5,7 @@
 //
 
 import XCTest
-@testable import Dolphin
+@testable import 海豚生态
 
 class DolphinTests: XCTestCase {
 

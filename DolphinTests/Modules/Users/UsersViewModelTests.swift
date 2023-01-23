@@ -7,7 +7,7 @@
 import Quick
 import Nimble
 import RxSwift
-@testable import Dolphin
+@testable import 海豚生态
 
 class UsersViewModelTests: QuickSpec {
     

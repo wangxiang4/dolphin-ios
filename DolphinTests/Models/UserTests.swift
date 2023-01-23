@@ -6,7 +6,7 @@
 
 import Quick
 import Nimble
-@testable import Dolphin
+@testable import 海豚生态
 
 class UserTests: QuickSpec {
 
@@ -17,11 +17,11 @@ class UserTests: QuickSpec {
 
         describe("Test from JSON Mapper") {
             it("User") {
-                let data: [String: Any] = [ "name": name, "password": password ]
+                let data: [String: Any] = [ "userName": name, "password": password ]
                 let user = User(JSON: data)
 
-                expect(user?.name) == login
-                expect(user?.password) == name
+                expect(user?.userName) == name
+                expect(user?.password) == password
         
             }
         }
