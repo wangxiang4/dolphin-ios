@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }).disposed(by: rx.disposeBag)
 
         // 显示初始启动界面
-        let application:Application = DIContainer.shared.resolve()
+        let application: Application = DIContainer.shared.resolve()
         application.presentInitialScreen(in: window!)
 
         return true

@@ -8,7 +8,7 @@ import RxSwift
 import Alamofire
 
 // 一个可观察的,当应用程序上线时完成(可能立即完成)
-func connectedToInternet() async -> Observable<Bool> {
+func connectedToInternet() -> Observable<Bool> {
     return ReachabilityManager.shared.reach
 }
 
