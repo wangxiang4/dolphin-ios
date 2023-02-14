@@ -9,7 +9,7 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 
-class MessagesViewModel: ViewModel, ViewModelType {
+class MessageViewModel: ViewModel, ViewModelType {
 
     struct Input {
         let headerRefresh: Observable<Void>

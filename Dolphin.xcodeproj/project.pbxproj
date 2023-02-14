@@ -85,8 +85,8 @@
 		2E88CC03293AC4CB0068227A /* InitialSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B08321060F79000DA282 /* InitialSplitViewController.swift */; };
 		2E88CC04293AC4CB0068227A /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF76215280EF004C310B /* MessageCell.swift */; };
 		2E88CC05293AC4CB0068227A /* MessageCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF7A21528108004C310B /* MessageCellViewModel.swift */; };
-		2E88CC06293AC4CB0068227A /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF74215280CA004C310B /* MessagesViewController.swift */; };
-		2E88CC07293AC4CB0068227A /* MessagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF72215280B3004C310B /* MessagesViewModel.swift */; };
+		2E88CC06293AC4CB0068227A /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF74215280CA004C310B /* MessageViewController.swift */; };
+		2E88CC07293AC4CB0068227A /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A034AF72215280B3004C310B /* MessageViewModel.swift */; };
 		2E88CC08293AC4CB0068227A /* SettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FF84820F285180070F5E8 /* SettingCell.swift */; };
 		2E88CC09293AC4CB0068227A /* SettingCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070FF84C20F285330070F5E8 /* SettingCellViewModel.swift */; };
 		2E88CC0A293AC4CB0068227A /* SettingSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E2B085210625C0000DA282 /* SettingSwitchCell.swift */; };
@@ -260,8 +260,8 @@
 		A017B3DA1E92995300E4FCED /* SplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
 		A034A8AD20F61A6500E2B678 /* HomeTabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewModel.swift; sourceTree = "<group>"; };
 		A034AF6F21527EF8004C310B /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
-		A034AF72215280B3004C310B /* MessagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewModel.swift; sourceTree = "<group>"; };
-		A034AF74215280CA004C310B /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		A034AF72215280B3004C310B /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		A034AF74215280CA004C310B /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		A034AF76215280EF004C310B /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 		A034AF77215280EF004C310B /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		A034AF7A21528108004C310B /* MessageCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellViewModel.swift; sourceTree = "<group>"; };
@@ -638,8 +638,8 @@
 			isa = PBXGroup;
 			children = (
 				2E9E52A82941B60B008C885E /* Cells */,
-				A034AF74215280CA004C310B /* MessagesViewController.swift */,
-				A034AF72215280B3004C310B /* MessagesViewModel.swift */,
+				A034AF74215280CA004C310B /* MessageViewController.swift */,
+				A034AF72215280B3004C310B /* MessageViewModel.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -1334,9 +1334,9 @@
 				2E88CC04293AC4CB0068227A /* MessageCell.swift in Sources */,
 				2E88CC05293AC4CB0068227A /* MessageCellViewModel.swift in Sources */,
 				2E96C36D2948566F004CB1CF /* RightArm.swift in Sources */,
-				2E88CC06293AC4CB0068227A /* MessagesViewController.swift in Sources */,
+				2E88CC06293AC4CB0068227A /* MessageViewController.swift in Sources */,
 				2E96C3692948566F004CB1CF /* LeftEarMask.swift in Sources */,
-				2E88CC07293AC4CB0068227A /* MessagesViewModel.swift in Sources */,
+				2E88CC07293AC4CB0068227A /* MessageViewModel.swift in Sources */,
 				2E9E52A32940D8D2008C885E /* HttpRequest.swift in Sources */,
 				2E96C3782948567B004CB1CF /* CritterAnimatable.swift in Sources */,
 				2E88CC08293AC4CB0068227A /* SettingCell.swift in Sources */,

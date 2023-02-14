@@ -68,7 +68,7 @@
 │  │  │  ├─Home -- 首页场景
 │  │  │  ├─Main -- APP启动入口场景
 │  │  │  ├─Workbench -- 工作台场景
-│  │  │  ├─Messages -- 消息场景
+│  │  │  ├─Message -- 消息场景
 │  │  │  ├─Settings -- 应用设置场景
 │  │  │  ├─Settings Language -- 语言切换设置场景
 │  │  │  ├─Theme -- 主题颜色切换场景

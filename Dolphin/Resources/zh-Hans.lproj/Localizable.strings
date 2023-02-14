@@ -31,7 +31,7 @@
 /* 主页TabBar */
 "Home.TabBar.Home.Title" = "首页";
 "Home.TabBar.Workbench.Title" = "工作台";
-"Home.TabBar.Messages.Title" = "消息";
+"Home.TabBar.Message.Title" = "消息";
 "Home.TabBar.Settings.Title" = "设置";
 
 /* 设置 */

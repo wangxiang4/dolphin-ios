@@ -41,8 +41,8 @@ class HomeTabBarViewModel: ViewModel, ViewModelType {
         case .workbench:
             let viewModel = WorkbenchViewModel()
             return viewModel
-        case .messages:
-            let viewModel = MessagesViewModel()
+        case .message:
+            let viewModel = MessageViewModel()
             return viewModel
         case .settings:
             let viewModel = SettingsViewModel()
