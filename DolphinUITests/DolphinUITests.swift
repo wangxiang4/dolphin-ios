@@ -28,8 +28,8 @@ class DolphinUITests: XCTestCase {
         super.tearDown()
     }
 
-    // 设置场景截图
-    func testScreenshotSettings() {
+    // 用户场景截图
+    func testScreenshotUser() {
         let element = XCUIApplication().children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element
         element.children(matching: .other).element(boundBy: 3).tap()
         sleep(1)
@@ -38,11 +38,11 @@ class DolphinUITests: XCTestCase {
         element.children(matching: .other).element(boundBy: 3).tap()
 
         sleep(5)
-        snapshot("03_settings_screen")
+        snapshot("03_user_screen")
     }
 
     // 首页场景截图
-    func testScreenshotSearch() {
+    func testScreenshotHome() {
         sleep(5)
         snapshot("01_Home")
     }

@@ -69,8 +69,8 @@
 │  │  │  ├─Main -- APP启动入口场景
 │  │  │  ├─Workbench -- 工作台场景
 │  │  │  ├─Message -- 消息场景
-│  │  │  ├─Settings -- 应用设置场景
-│  │  │  ├─Settings Language -- 语言切换设置场景
+│  │  │  ├─User -- 我的场景
+│  │  │  ├─Language -- 语言切换场景
 │  │  │  ├─Theme -- 主题颜色切换场景
 │  │  ├─DependencyInjection -- IOC依赖注入
 │  │  ├─Extensions -- 功能扩展

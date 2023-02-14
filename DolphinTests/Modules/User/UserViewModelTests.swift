@@ -9,7 +9,7 @@ import Nimble
 import RxSwift
 @testable import 海豚生态
 
-class UsersViewModelTests: QuickSpec {
+class UserViewModelTests: QuickSpec {
     
     override func spec() {
         
