@@ -353,7 +353,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		070FF84320F2846F0070F5E8 /* Setting */ = {
+		070FF84320F2846F0070F5E8 /* User */ = {
 			isa = PBXGroup;
 			children = (
 				2E480A6129446333007DEF87 /* View */,
@@ -362,7 +362,7 @@
 				070FF84420F284D40070F5E8 /* UserViewController.swift */,
 				070FF84620F284F00070F5E8 /* UserViewModel.swift */,
 			);
-			path = Setting;
+			path = User;
 			sourceTree = "<group>";
 		};
 		0757B52C21669DAC00C04163 /* Settings Language */ = {
@@ -428,7 +428,7 @@
 				07FC33751FFFD47600D53888 /* Main */,
 				2E880D2C2950DD5500834F74 /* Workbench */,
 				A034AF7121528087004C310B /* Messages */,
-				070FF84320F2846F0070F5E8 /* Setting */,
+				070FF84320F2846F0070F5E8 /* User */,
 				0757B52C21669DAC00C04163 /* Settings Language */,
 				07919463214D4D4700A7067E /* Theme */,
 			);
