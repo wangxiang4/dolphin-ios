@@ -8,7 +8,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class SettingCellViewModel: DefaultTableViewCellViewModel {
+class UserCellViewModel: DefaultTableViewCellViewModel {
 
     init(with title: String, detail: String?, image: UIImage?, hidesDisclosure: Bool) {
         super.init()

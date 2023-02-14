@@ -5,7 +5,7 @@
 //
 
 import SwiftUI
-class SettingCell: DefaultTableViewCell {
+class UserCell: DefaultTableViewCell {
 
     override func makeUI() {
         super.makeUI()

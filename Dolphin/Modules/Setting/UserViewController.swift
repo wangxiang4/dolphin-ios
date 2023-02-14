@@ -11,17 +11,17 @@ import RxDataSources
 import WhatsNewKit
 import Toast_Swift
 
-private let switchReuseIdentifier = R.reuseIdentifier.settingSwitchCell.identifier
-private let reuseIdentifier = R.reuseIdentifier.settingCell.identifier
-class SettingsViewController: TableViewController {
+private let switchReuseIdentifier = R.reuseIdentifier.userSwitchCell.identifier
+private let reuseIdentifier = R.reuseIdentifier.userCell.identifier
+class UserViewController: TableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
    
     // 懒加载顶部头视图
-    private lazy var headerView: SettingsHeaderView = {
-        let view = SettingsHeaderView()
+    private lazy var headerView: UserHeaderView = {
+        let view = UserHeaderView()
         view.delegate = self
         return view
     }()
@@ -29,26 +29,26 @@ class SettingsViewController: TableViewController {
     override func makeUI() {
         super.makeUI()
         languageChanged.subscribe(onNext: { [weak self] () in
-            self?.navigationTitle = R.string.localizable.homeTabBarSettingsTitle.key.localized()
+            self?.navigationTitle = R.string.localizable.homeTabBarUserTitle.key.localized()
         }).disposed(by: rx.disposeBag)
         stackView.insertArrangedSubview(headerView, at: 0)
-        tableView.register(R.nib.settingCell)
-        tableView.register(R.nib.settingSwitchCell)
+        tableView.register(R.nib.userCell)
+        tableView.register(R.nib.userSwitchCell)
         tableView.headRefreshControl = nil
         tableView.footRefreshControl = nil
     }
     
     override func bindViewModel() {
         super.bindViewModel()
-        guard let viewModel = viewModel as? SettingsViewModel else { return }
+        guard let viewModel = viewModel as? UserViewModel else { return }
         let refresh = Observable.of(rx.viewWillAppear.mapToVoid(), languageChanged.asObservable()).merge()
-        let input = SettingsViewModel.Input(trigger: refresh, selection: tableView.rx.modelSelected(SettingsSectionItem.self).asDriver())
+        let input = UserViewModel.Input(trigger: refresh, selection: tableView.rx.modelSelected(UserSectionItem.self).asDriver())
         let output = viewModel.transform(input: input)
         
-        let dataSource = RxTableViewSectionedReloadDataSource<SettingsSection>(configureCell: { dataSource, tableView, indexPath, item in
+        let dataSource = RxTableViewSectionedReloadDataSource<UserSection>(configureCell: { dataSource, tableView, indexPath, item in
             switch item {
             case .nightModeItem(let viewModel):
-                let cell = (tableView.dequeueReusableCell(withIdentifier: switchReuseIdentifier, for: indexPath) as? SettingSwitchCell)!
+                let cell = (tableView.dequeueReusableCell(withIdentifier: switchReuseIdentifier, for: indexPath) as? UserSwitchCell)!
                 cell.bind(to: viewModel)
                 return cell
             case .themeItem(let viewModel),
@@ -56,7 +56,7 @@ class SettingsViewController: TableViewController {
                  .removeCacheItem(let viewModel),
                  .whatsNewItem(let viewModel),
                  .logoutItem(let viewModel):
-                let cell = (tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? SettingCell)!
+                let cell = (tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? UserCell)!
                 cell.bind(to: viewModel)
                 return cell
             }
@@ -112,9 +112,9 @@ class SettingsViewController: TableViewController {
     }
     
     func logoutAction() {
-        let alertController = UIAlertController(title: "温馨提示", message: R.string.localizable.settingsLogoutAlertMessage.key.localized(), preferredStyle: UIAlertController.Style.alert)
+        let alertController = UIAlertController(title: "温馨提示", message: R.string.localizable.userLogoutAlertMessage.key.localized(), preferredStyle: UIAlertController.Style.alert)
       
-        let logoutAction = UIAlertAction(title: R.string.localizable.settingsLogoutAlertConfirmButtonTitle.key.localized(), style: .destructive) { [weak self] (result: UIAlertAction) in
+        let logoutAction = UIAlertAction(title: R.string.localizable.userLogoutAlertConfirmButtonTitle.key.localized(), style: .destructive) { [weak self] (result: UIAlertAction) in
             PermissionUtil.logout()
         }
 
@@ -127,7 +127,7 @@ class SettingsViewController: TableViewController {
 
 }
 
-extension SettingsViewController: SettingsHeaderViewDelegate {
+extension UserViewController: UserHeaderViewDelegate {
     
     // 图片点击
     func imgViewClick(imgView: UIImageView) {

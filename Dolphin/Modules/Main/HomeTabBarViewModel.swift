@@ -44,8 +44,8 @@ class HomeTabBarViewModel: ViewModel, ViewModelType {
         case .message:
             let viewModel = MessageViewModel()
             return viewModel
-        case .settings:
-            let viewModel = SettingsViewModel()
+        case .user:
+            let viewModel = UserViewModel()
             return viewModel
         }
     }

@@ -14,7 +14,7 @@ import WhatsNewKit
 enum HomeTabBarItem: Int, CaseIterable {
     
     // 导航栏包含(首页,工作台,消息,设置)
-    case home, workbench, message, settings
+    case home, workbench, message, user
 
     private func controller(with viewModel: ViewModel) -> UIViewController {
         switch self {
@@ -27,8 +27,8 @@ enum HomeTabBarItem: Int, CaseIterable {
         case .message:
             let vc = MessageViewController(viewModel: viewModel)
             return NavigationController(rootViewController: vc)
-        case .settings:
-            let vc = SettingsViewController(viewModel: viewModel)
+        case .user:
+            let vc = UserViewController(viewModel: viewModel)
             return NavigationController(rootViewController: vc)
         }
     }
@@ -39,7 +39,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         case .home: return R.image.icon_tabbar_home()
         case .workbench: return R.image.icon_tabbar_workbench()
         case .message: return R.image.icon_tabbar_activity()
-        case .settings: return R.image.icon_tabbar_settings()
+        case .user: return R.image.icon_tabbar_settings()
         }
     }
 
@@ -49,7 +49,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         case .home: return R.string.localizable.homeTabBarHomeTitle.key.localized()
         case .workbench: return R.string.localizable.homeTabBarWorkbenchTitle.key.localized()
         case .message: return R.string.localizable.homeTabBarMessageTitle.key.localized()
-        case .settings: return R.string.localizable.homeTabBarSettingsTitle.key.localized()
+        case .user: return R.string.localizable.homeTabBarUserTitle.key.localized()
         }
     }
 
@@ -59,7 +59,7 @@ enum HomeTabBarItem: Int, CaseIterable {
         case .home: animation = RAMBounceAnimation()
         case .workbench: animation = RAMBounceAnimation()
         case .message: animation = RAMBounceAnimation()
-        case .settings: animation = RAMRightRotationAnimation()
+        case .user: animation = RAMRightRotationAnimation()
         }
         animation.theme.iconSelectedColor = themeService.attribute { $0.secondary }
         animation.theme.textSelectedColor = themeService.attribute { $0.secondary }

@@ -7,32 +7,32 @@
 import Foundation
 import RxDataSources
 
-enum SettingsSection {
-    case setting(title: String, items: [SettingsSectionItem])
+enum UserSection {
+    case setting(title: String, items: [UserSectionItem])
 }
 
-enum SettingsSectionItem {
+enum UserSectionItem {
 
     // 夜间模式
-    case nightModeItem(viewModel: SettingSwitchCellViewModel)
+    case nightModeItem(viewModel: UserSwitchCellViewModel)
     
     // 切换主题颜色
-    case themeItem(viewModel: SettingCellViewModel)
+    case themeItem(viewModel: UserCellViewModel)
     
     // 切换国际化语言
-    case languageItem(viewModel: SettingCellViewModel)
+    case languageItem(viewModel: UserCellViewModel)
     
     // 清除图片缓存
-    case removeCacheItem(viewModel: SettingCellViewModel)
+    case removeCacheItem(viewModel: UserCellViewModel)
     
     // 新特性
-    case whatsNewItem(viewModel: SettingCellViewModel)
+    case whatsNewItem(viewModel: UserCellViewModel)
     
     // 登出
-    case logoutItem(viewModel: SettingCellViewModel)
+    case logoutItem(viewModel: UserCellViewModel)
 }
 
-extension SettingsSectionItem: IdentifiableType {
+extension UserSectionItem: IdentifiableType {
     typealias Identity = String
     var identity: Identity {
         switch self {
@@ -46,14 +46,14 @@ extension SettingsSectionItem: IdentifiableType {
     }
 }
 
-extension SettingsSectionItem: Equatable {
-    static func == (lhs: SettingsSectionItem, rhs: SettingsSectionItem) -> Bool {
+extension UserSectionItem: Equatable {
+    static func == (lhs: UserSectionItem, rhs: UserSectionItem) -> Bool {
         return lhs.identity == rhs.identity
     }
 }
 
-extension SettingsSection: AnimatableSectionModelType, IdentifiableType {
-    typealias Item = SettingsSectionItem
+extension UserSection: AnimatableSectionModelType, IdentifiableType {
+    typealias Item = UserSectionItem
 
     typealias Identity = String
     var identity: Identity { return title }
@@ -64,13 +64,13 @@ extension SettingsSection: AnimatableSectionModelType, IdentifiableType {
         }
     }
 
-    var items: [SettingsSectionItem] {
+    var items: [UserSectionItem] {
         switch  self {
         case .setting(_, let items): return items.map {$0}
         }
     }
 
-    init(original: SettingsSection, items: [Item]) {
+    init(original: UserSection, items: [Item]) {
         switch original {
         case .setting(let title, let items): self = .setting(title: title, items: items)
         }

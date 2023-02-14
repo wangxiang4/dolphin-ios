@@ -8,7 +8,7 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-class SettingSwitchCellViewModel: DefaultTableViewCellViewModel {
+class UserSwitchCellViewModel: DefaultTableViewCellViewModel {
 
     let isEnabled = BehaviorRelay<Bool>(value: false)
 

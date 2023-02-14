@@ -32,18 +32,18 @@
 "Home.TabBar.Home.Title" = "Home";
 "Home.TabBar.Workbench.Title" = "Workbench";
 "Home.TabBar.Message.Title" = "Message";
-"Home.TabBar.Settings.Title" = "Settings";
+"Home.TabBar.User.Title" = "My";
 
 /* 设置 */
-"Settings.NightMode.Title" = "Night mode";
-"Settings.Theme.Title" = "Color theme";
-"Settings.Language.Title" = "Language";
-"Settings.RemoveCache.Title" = "Remove cache";
-"Settings.RemoveCache.Alert.SuccessMessage" = "Cache Successfully Cleared";
-"Settings.WhatsNew.Title" = "Whats New";
-"Settings.LogOut.Title" = "Log Out";
-"Settings.Logout.Alert.Message" = "Are you sure want to log out from login？";
-"Settings.Logout.Alert.ConfirmButton.Title" = "Logout";
+"User.NightMode.Title" = "Night mode";
+"User.Theme.Title" = "Color theme";
+"User.Language.Title" = "Language";
+"User.RemoveCache.Title" = "Remove cache";
+"User.RemoveCache.Alert.SuccessMessage" = "Cache Successfully Cleared";
+"User.WhatsNew.Title" = "Whats New";
+"User.LogOut.Title" = "Log Out";
+"User.Logout.Alert.Message" = "Are you sure want to log out from login？";
+"User.Logout.Alert.ConfirmButton.Title" = "Logout";
 
 /* 语言 */
 "Language.Navigation.Title" = "Language";

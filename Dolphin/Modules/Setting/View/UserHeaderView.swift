@@ -8,15 +8,15 @@ import SwiftUI
 import Kingfisher
 
 // 事件代理
-protocol SettingsHeaderViewDelegate: NSObjectProtocol {
+protocol UserHeaderViewDelegate: NSObjectProtocol {
     
     func imgViewClick(imgView: UIImageView)
 
 }
 
-class SettingsHeaderView: UIView {
+class UserHeaderView: UIView {
   
-    weak var delegate: SettingsHeaderViewDelegate?
+    weak var delegate: UserHeaderViewDelegate?
     
     // 内容视图
     lazy var contentView: View = {

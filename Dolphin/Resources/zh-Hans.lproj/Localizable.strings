@@ -32,18 +32,18 @@
 "Home.TabBar.Home.Title" = "首页";
 "Home.TabBar.Workbench.Title" = "工作台";
 "Home.TabBar.Message.Title" = "消息";
-"Home.TabBar.Settings.Title" = "设置";
+"Home.TabBar.User.Title" = "我的";
 
 /* 设置 */
-"Settings.NightMode.Title" = "夜间模式";
-"Settings.Theme.Title" = "颜色主题";
-"Settings.Language.Title" = "语言";
-"Settings.RemoveCache.Title" = "删除缓存";
-"Settings.RemoveCache.Alert.SuccessMessage" = "成功清除缓存";
-"Settings.WhatsNew.Title" = "什么是新的";
-"Settings.LogOut.Title" = "退出";
-"Settings.Logout.Alert.Message" = "您确定要退出登录吗？";
-"Settings.Logout.Alert.ConfirmButton.Title" = "退出";
+"User.NightMode.Title" = "夜间模式";
+"User.Theme.Title" = "颜色主题";
+"User.Language.Title" = "语言";
+"User.RemoveCache.Title" = "删除缓存";
+"User.RemoveCache.Alert.SuccessMessage" = "成功清除缓存";
+"User.WhatsNew.Title" = "什么是新的";
+"User.LogOut.Title" = "退出";
+"User.Logout.Alert.Message" = "您确定要退出登录吗？";
+"User.Logout.Alert.ConfirmButton.Title" = "退出";
 
 /* 语言 */
 "Language.Navigation.Title" = "语言";

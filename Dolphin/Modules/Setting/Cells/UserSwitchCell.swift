@@ -6,7 +6,7 @@
 
 import SwiftUI
 
-class SettingSwitchCell: DefaultTableViewCell {
+class UserSwitchCell: DefaultTableViewCell {
 
     lazy var switchView: Switch = {
         let view = Switch()
@@ -26,7 +26,7 @@ class SettingSwitchCell: DefaultTableViewCell {
 
     override func bind(to viewModel: TableViewCellViewModel) {
         super.bind(to: viewModel)
-        guard let viewModel = viewModel as? SettingSwitchCellViewModel else { return }
+        guard let viewModel = viewModel as? UserSwitchCellViewModel else { return }
         viewModel.isEnabled.asDriver().drive(switchView.rx.isOn).disposed(by: rx.disposeBag)
         switchView.rx.isOn.bind(to: viewModel.switchChanged).disposed(by: rx.disposeBag)
     }
