@@ -427,7 +427,7 @@
 				2E8399EF293651C9002ADBC0 /* Home */,
 				07FC33751FFFD47600D53888 /* Main */,
 				2E880D2C2950DD5500834F74 /* Workbench */,
-				A034AF7121528087004C310B /* Messages */,
+				A034AF7121528087004C310B /* Message */,
 				070FF84320F2846F0070F5E8 /* User */,
 				0757B52C21669DAC00C04163 /* Language */,
 				07919463214D4D4700A7067E /* Theme */,
@@ -634,14 +634,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A034AF7121528087004C310B /* Messages */ = {
+		A034AF7121528087004C310B /* Message */ = {
 			isa = PBXGroup;
 			children = (
 				2E9E52A82941B60B008C885E /* Cells */,
 				A034AF74215280CA004C310B /* MessageViewController.swift */,
 				A034AF72215280B3004C310B /* MessageViewModel.swift */,
 			);
-			path = Messages;
+			path = Message;
 			sourceTree = "<group>";
 		};
 		A09499491E1D1CB500EFDE29 = {
